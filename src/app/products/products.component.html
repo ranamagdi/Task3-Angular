@@ -1,0 +1,15 @@
+
+  <div class="card" appHoveBackground  >
+    <div class="card-title pt-3" appTextColor [defulatColor]="'blue'" [highlightColor]="'green'">
+      {{product.Name}}
+    </div>
+    <img [src]="product.Image"/>
+    <div class="card-body">
+      <div class="card-text">
+       <p>{{product.Description}}</p>
+       <small>{{product.Price}}$</small>
+      </div>
+
+    </div>
+  </div>
+

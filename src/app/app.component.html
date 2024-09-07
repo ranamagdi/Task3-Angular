@@ -1,0 +1,31 @@
+<div class="container mt-5 mb-5">
+  <div class="row text-center ">
+    @for (product of bestProducts; track $index) {
+      <div class="col-lg-4 col-md-4 col-sm-12" >
+        <app-products [product]="product"/>
+      </div>
+    }
+
+    @empty {
+      <div>
+        No Products available
+      </div>
+    }
+
+
+   <!-- <div>
+    <app-add-product (productAdded)="onProductAdded($event)"/>
+
+    <div *ngFor="let product of products" class="card mt-3">
+      <img [src]="product.Image" class="card-img-top" alt="{{ product.Name }}" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.Name }}</h5>
+        <p class="card-text">{{ product.Description }}</p>
+        <p class="card-text"><strong>Price: </strong>${{ product.Price }}</p>
+      </div>
+    </div>
+   </div> -->
+
+
+</div>
+</div>
